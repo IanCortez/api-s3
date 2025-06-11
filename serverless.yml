@@ -45,7 +45,7 @@ functions:
           cors: true
           integration: lambda
   subir_archivo:
-    handler: udpload.lambda_handler
+    handler: upload.lambda_handler
     events:
       - http:
           path: /s3/subir-archivo
