@@ -16,7 +16,7 @@ def lambda_handler(event, context):
     s3 = boto3.client('s3')
     s3.put_object(
         Bucket=nombre_bucket,
-        Key={directory},
+        Key=directory,
         Body=file_content
     )
     
