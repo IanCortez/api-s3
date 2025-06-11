@@ -8,7 +8,7 @@ def lambda_handler(event, context):
     
     # Proceso    
     s3 = boto3.client('s3')
-    s3.put_object(Bucket=nombre_bucket, Key={dir_name})
+    s3.put_object(Bucket=nombre_bucket, Key=dir_name, Body='')
     
     return {
         'statusCode': 200,
